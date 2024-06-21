@@ -1,0 +1,135 @@
+@import url(/reset.css);
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --tc:#f2c5c5;
+    --blur:blur(5px);
+    --blur_back:blur(1px);
+    --fff:#fff;
+    --hamburger-size:25px;   
+
+}
+*{
+    font-family: 'Pretendard-Regular', Helvetica,sans-serif ,serif;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    &::-webkit-scrollbar{
+        /* display: none; */
+      }
+}
+body{
+    min-width: 340px; /*갤럭시폴드 폴디드 width*/
+    width: 100%;
+    height: 100%;
+}
+.dpnone{
+    display: none;
+}
+/* 헤더 */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    overflow: hidden;
+    /* background-color: var(--tc); */
+    border-bottom: #000 1px solid;
+}
+    /* 햄버거 메뉴 */
+    .all_menu-btn{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: var(--hamburger-size);
+        height: var(--hamburger-size);
+        /* border: 1px solid #000; */
+        z-index: 110;
+    }
+    .all_menu-btn span{
+        width: 100%;
+        height: 2px;
+        border-radius: 3px;
+        background-color: #000;
+
+        position: absolute;
+        left: 0;
+        transform: translateY(-10%);
+    }
+    .all_menu-btn span:nth-child(1){
+        top: 25%;
+    }
+    .all_menu-btn span:nth-child(2){
+        top: 50%;
+    }
+    .all_menu-btn span:nth-child(3){
+        top: 75%;
+    }
+    .all_menu-btn:hover{
+        cursor: pointer;
+    }
+
+/* 헤더 로고 */
+#header-logo{
+    width: 17.8rem;
+    height: 5.1rem;
+    overflow: hidden;
+}
+/* gnb */
+.gnb{
+    margin: 0 3rem;
+}
+.gnb_list{
+    /* margin: auto; */
+    display: flex;
+    gap: 0 7.2rem;
+}
+
+
+/* 전체 메뉴(나타나는 메뉴)---------------------- */
+#all_menu{
+    z-index: 102;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 1200px;
+    width: 75%;
+    height: 100vh;
+    border-left: 1px solid #000;
+    background-color: var(--fff);
+}
+/* 전체 메뉴 BACK */
+.all_menu-back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000065;
+    backdrop-filter: var(--blur_back);
+    -webkit-backdrop-filter: var(--blur_back);
+    transform: translateX(0%);
+    z-index: 101;
+}
+/* 메뉴 토글 */
+#all_menu-toggle:checked ~ #all_menu,
+#all_menu-toggle:checked ~ .all_menu-back{
+    transform: translateX(100%)
+}

@@ -7,23 +7,86 @@
     <title>인사이트넥서스연구원</title>
 </head>
 <body>
+    <input type="checkbox" name="allmenu" id="all_menu-toggle" class="dpnone">
     <header>
         <div class="header-wrap">
-            <div id="logo"></div>
-            <nav class="gnb"></nav>
+            <div id="header_logo">
+                <h1>
+                    <a href="/">
+                        로고
+                        <!-- <img src="" alt="인사이트넥서스연구원 INSIGHT NEXUS INSTITUTE"> -->
+                    </a>
+                </h1>
+            </div>
+            <nav class="gnb">
+                <ul class="gnb_list">
+                    <li class="gnb_item-lv1">
+                        <a href="http://">소개</a>
+                        <ul class="gnb_list gnb_list-lv2">
+                            <li class="gnb_item-lv2"></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item-lv1">
+                        <a href="http://">구성원</a>
+                        <ul class="gnb_list gnb_list-lv2">
+                            <li class="gnb_item-lv2"></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item-lv1">
+                        <a href="http://">입학</a>
+                        <ul class="gnb_list gnb_list-lv2">
+                            <li class="gnb_item-lv2"></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item-lv1">
+                        <a href="http://">프로그램</a>
+                        <ul class="gnb_list gnb_list-lv2">
+                            <li class="gnb_item-lv2"></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item-lv1">
+                        <a href="http://">커뮤니티</a>
+                        <ul class="gnb_list gnb_list-lv2">
+                            <li class="gnb_item-lv2"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="header-menu">
                 <div class="lang-wrap">
-                    <div class="lang-btn"></div>
+                    <div class="lang-btn">KOR▼</div>
                     <div class="lang-select">
-                        <div class="lang-kr">KOR</div>
-                        <div class="lang-en">ENG</div>
+                        <a class="lang-kr">KOR</a>
+                        <a class="lang-en">ENG</a>
                     </div>
                 </div>
             </div>
+            <label for="all_menu-toggle" class="all_menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
-    <div id="all-menu"></div>
-    <main></main>
-    <footer></footer>
+    <!-- 전체메뉴(숨긴메뉴) -->
+    <div id="all_menu">
+        <section class="menu-sec1">
+
+        </section>
+        <section class="menu-sec2">
+
+        </section>
+    </div>
+    <label for="all_menu-toggle" class="all_menu-back"></label>
+    <!-- 메인 -->
+    <main>
+        <section id="sec1"></section>
+        <section id="sec2"></section>
+        <section id="sec3"></section>
+        <section id="sec4"></section>
+        <section id="sec5"></section>
+    </main>
+    <!-- 푸터 -->
+    <footer id="footer"></footer>
 </body>
 </html>
