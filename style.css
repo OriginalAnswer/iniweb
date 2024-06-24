@@ -18,6 +18,8 @@
     --header-h: 70px;
     --header-padding-side:3rem;
     --q-size:50px;
+    --keytabs-padding-right:45px;
+
 }
 *{
     font-family: 'Pretendard-Regular', Helvetica,sans-serif ,serif;
@@ -298,15 +300,12 @@ header{
     border-top: 1px solid var(--keytabs-border-color);
     border-bottom: 1px solid var(--keytabs-border-color);
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .keytabs{
-    --keytabs-padding-right:45px;
     position: relative;
     
     min-width: 200px;
     width: 25%;
-    /* width: 50%; */
     padding: 30px;
     padding-right: var(--keytabs-padding-right);
     border-right: 1px solid var(--keytabs-border-color);
@@ -391,5 +390,19 @@ header{
 @media (max-width: 720px) {
     #all_menu{
         width: 100%;
+    }
+}
+@media (max-width: 450px){
+    :root{
+        --header-padding-side:1rem;
+    }
+    .keytabs{
+        min-width: 100px;
+        padding-right: 0;        ;
+    }
+}
+@media (max-width: 350px){
+    .arrow45deg{
+        display: none;       ;
     }
 }
