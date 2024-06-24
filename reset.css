@@ -36,3 +36,6 @@ a:hover{
 .dpnone{
     display: none;
 }
+.arrow45deg{
+    transform: rotateZ(45deg)translateY(-50%);
+}
