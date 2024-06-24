@@ -1,4 +1,4 @@
-@import url(/reset.css);
+@import url(./reset.css);
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -43,11 +43,12 @@ header{
     z-index: 100;
 }
 .header-wrap{
+    --header-padding-side:3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 3rem;
+    padding: 10px var(--header-padding-side);
     background-color: var(--fff);
     border-bottom: #e5e5e5 1px solid;
 }
@@ -147,6 +148,12 @@ header{
     background-color: var(--fff);
     transform: translateX(100%);
     transition: .3s ease-in-out;
+}
+.all_menu-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--header-padding-side);
 }
 /* 전체 메뉴 BACK */
 .all_menu-back{
