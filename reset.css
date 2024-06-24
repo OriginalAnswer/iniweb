@@ -16,3 +16,23 @@ html{
         display: none;
       }
 }
+.preload {
+
+    transition: none !important;
+
+    -webkit-transition: none !important;
+
+    -moz-transition: none !important;
+
+    -ms-transition: none !important;
+
+    -o-transition: none !important;
+
+  }
+/* ----------------------------------------------- */
+a:hover{
+    cursor: pointer;
+}
+.dpnone{
+    display: none;
+}
