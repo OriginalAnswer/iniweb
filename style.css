@@ -284,7 +284,7 @@ header{
     max-height: 960px;
     background-color: var(--bgc-test);
 
-    padding-top: var(--header-h);
+    /* padding-top: var(--header-h); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -293,6 +293,9 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
+}
+.main_slide>img{
+    width: 100%;    
 }
 .main_keytabs{
     --keytabs-border-color:rgba(255, 255, 255, 0.855);
