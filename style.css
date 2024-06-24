@@ -13,14 +13,16 @@
     --blur:blur(5px);
     --blur_back:blur(2px);
     --fff:#fff;
+    --fff2:#efeeee;
+    --black:#000;
+    --black2:#121212;
     --hamburger-size:25px;   
     --header-bgc: #fff;
     --header-h: 70px;
     --header-padding-side:3rem;
     --q-size:50px;
     --keytabs-padding-right:45px;
-    --fff2:#efeeee;
-
+    --text-shadow:0px 2px 2px rgba(0, 0, 0, 0.27);
 }
 *{
     font-family: 'Pretendard-Regular', Helvetica,sans-serif ,serif;
@@ -78,6 +80,7 @@ header{
     /* background-color: var(--fff); */
     /* border-bottom: #e5e5e5 1px solid; */
     color: var(--fff2);
+    text-shadow: var(--text-shadow);
 }
 /* 헤더 로고 */
 #header-logo{
@@ -93,7 +96,7 @@ header{
 .gnb_list{
     /* margin: auto; */
     display: flex;
-    gap: 0 6rem;
+    gap: 0 5rem;
 }
 .gnb_item-lv1{
     display: flex;
@@ -114,13 +117,14 @@ header{
 .gnb_list-lv2{
     position: absolute;
     bottom: 0;
-    transform: translateY(100%);
+    transform: translateY(90%);
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     gap: 5px;
     background-color: #ffffffd2;
     overflow: hidden;
+    color: var(--black2);
 }
 .gnb_item-lv2{
     padding: 5px 20px;
@@ -178,11 +182,12 @@ header{
 .lang-select>a:hover{
     background-color: #c0c0c0ac;
 }
-.lang-wrap:hover .lang-btn-icon{
-    transition: 0.3s;
+.lang-btn-icon{
+    transform: scale(.7);
 }
 .lang-wrap:hover .lang-btn-icon{
-    transform: rotateZ(180deg);
+    transition: 0.3s;
+    transform: rotateZ(180deg) scale(.7);
 }
 .lang-wrap:hover .lang-select{
     display: flex;
@@ -311,6 +316,8 @@ header{
     border-top: 1px solid var(--keytabs-border-color);
     border-bottom: 1px solid var(--keytabs-border-color);
     display: flex;
+    position: absolute;
+    bottom: 0;left: 0;
 }
 .keytabs{
     position: relative;
@@ -341,7 +348,16 @@ header{
 .keytabs:hover{
     background-color: var(--keycolor);
 }
-
+/* 중앙 텍스트 */
+.main_words{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 /* 섹션2 ---------------------*/
 #sec2{
@@ -403,6 +419,9 @@ header{
     #all_menu{
         width: 100%;
     }
+    .header-menu{
+        gap: 1.5em;
+    }
 }
 @media (max-width: 450px){
     :root{
@@ -411,6 +430,9 @@ header{
     .keytabs{
         min-width: 100px;
         padding-right: 0;        ;
+    }
+    .header-menu{
+        gap: 1em;
     }
 }
 @media (max-width: 350px){
