@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -117,7 +118,7 @@ header{
 .gnb_list-lv2{
     position: absolute;
     bottom: 0;
-    transform: translateY(90%);
+    transform: translateY(calc(100% - 15px));
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -291,6 +292,7 @@ header{
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: 600px;
     max-height: 960px;
     background-color: var(--bgc-test);
 
@@ -324,7 +326,7 @@ header{
 .keytabs{
     position: relative;
     
-    min-width: 200px;
+    min-width: 180px;
     width: 25%;
     padding: 30px;
     padding-right: var(--keytabs-padding-right);
@@ -358,6 +360,20 @@ header{
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+}
+.main_words>div{
+    color: var(--fff2);
+    z-index: 1;
+    text-shadow: var(--text-shadow);
+    text-align: center;
+}
+.main_words-top{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.main_words-bottom{
+    font-size: 1em;
 }
 
 /* 섹션2 ---------------------*/
@@ -397,15 +413,17 @@ header{
     #sec1{
         max-height: 768px;
     }
+    .header-menu{
+        gap: 1.5em;
+    }
 }
 @media (max-width: 840px) {
     .main_keytabs{
         flex-wrap: wrap;
     }
     .keytabs{
-        width: 50%;
+        font-size: .9em;
     }
-    
 }
 @media (max-width: 768px) {
     :root{
@@ -415,13 +433,13 @@ header{
     #all_menu{
         width: 85%;
     }
+    .keytabs{
+        width: 50%;
+    }
 }
 @media (max-width: 720px) {
     #all_menu{
         width: 100%;
-    }
-    .header-menu{
-        gap: 1.5em;
     }
 }
 @media (max-width: 450px){
