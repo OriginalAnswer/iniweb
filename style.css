@@ -149,7 +149,7 @@ header{
 /* 헤더 왼쪽 메뉴바+한영 */
 .header-menu{
     display: flex;
-    gap: 2.5rem;
+    gap: 1.9rem;
     align-items: center;
 }
 /* 한영전환 */
