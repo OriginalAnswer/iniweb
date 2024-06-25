@@ -384,7 +384,7 @@ header{
 .main_words-top{
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 2.8em;
 }
 .main_words-bottom{
     font-size: 1em;
@@ -430,6 +430,7 @@ header{
     .header-menu{
         gap: 1.5em;
     }
+    
 }
 @media (max-width: 840px) {
     .main_keytabs{
@@ -437,6 +438,9 @@ header{
     }
     .keytabs{
         font-size: .9em;
+    }
+    .main_words-top{
+        font-size: 1.75em;
     }
 }
 @media (max-width: 768px) {
@@ -467,9 +471,13 @@ header{
     .header-menu{
         gap: 1em;
     }
+    .main_words-top{
+        font-size: 1.2em;
+    }
 }
 @media (max-width: 350px){
     .arrow45deg{
-        display: none;       ;
+        display: none;
     }
+    
 }
