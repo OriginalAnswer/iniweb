@@ -228,12 +228,6 @@ header{
         
     background-color: var(--keycolor);
 }
-.all-menu{
-    border: var(--bd-test);
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-}
 
 
 .all_menu-top{
@@ -285,6 +279,46 @@ header{
     transition: opacity .3s ease-in-out;
 
 }
+
+.all-menu{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    color: var(--fff2);
+    &::-webkit-scrollbar{
+        display: none;
+      }
+}
+.all-menu-row{
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.all-menu-row-sec1{
+    font-weight: 600;
+    font-size: 1.3em;
+    min-width: 110px;
+}
+.all-menu-row-sec2{
+    padding: 0 15px 0 50px;
+    width: 100%;
+    
+}
+.all-menu-row-item{
+
+}
+
+.all-menu-row:hover>.all-menu-row-sec1{
+    color: #ff4f4f;
+}
+.all-menu-row:not(.all-menu-row:last-child){
+    border-bottom: #a5a5a565 1px solid;
+}
+
 
 
 /* 메인 ---------------------*/
