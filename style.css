@@ -418,7 +418,7 @@ header{
 .main_words-top{
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 2.8em;
+    font-size: 2.3em;
 }
 .main_words-bottom{
     font-size: 1em;
@@ -506,7 +506,7 @@ header{
         gap: 1em;
     }
     .main_words-top{
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
 }
 @media (max-width: 350px){
