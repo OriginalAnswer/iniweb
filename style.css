@@ -225,7 +225,6 @@ header{
     padding: var(--header-h) 50px;
     transform: translateX(100%);
     transition: .3s ease-in-out;
-        
     background-color: var(--keycolor);
 }
 
@@ -492,6 +491,18 @@ header{
 @media (max-width: 720px) {
     #all_menu{
         width: 100%;
+    }
+}
+@media (max-width: 576px){
+    #all_menu{
+        padding: 70px 30px 30px 30px;
+    }
+    .all-menu-row{
+        display: block;
+        padding: 25px 15px;
+    }
+    .all-menu-row-sec2{
+        padding: 15px 0 0 3px;
     }
 }
 @media (max-width: 450px){
